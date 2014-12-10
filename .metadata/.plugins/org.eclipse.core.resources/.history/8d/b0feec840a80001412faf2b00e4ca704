@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Cylinder {
+
+	public static void main(String[] args) {
+		// A = 2pirh + 2pir^2
+		// V = pir^2+h
+		
+		//Round function:: (datatype)Math.round(value * 100)/100;  //Rounds to two decimal places
+		
+		final double PI = 3.141592654;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Please enter the Radius: ");
+		double radius = scan.nextDouble();
+		
+		System.out.println("Please enter the Height: ");
+		double height = scan.nextDouble();
+		
+		double surfaceArea = ((2 * PI * radius * height) + (2 * PI * Math.pow(radius, 2)));
+		double volume = (PI * Math.pow(radius, 2) * (height));
+		
+		double volumeRounded = (Math.round(volume * 100) / 100);
+		double surfaceAreaRounded = (Math.round(surfaceArea * 100) / 100)
+		
+		System.out.println("The Surface Area of the cylinder is " + surfaceAreaRounded 
+				+ " and the Volume is " + volumeRounded + ".");
+
+	}
+
+}

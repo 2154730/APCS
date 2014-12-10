@@ -24,8 +24,7 @@ public class ComputeTime {
 		
 		System.out.println();
 		System.out.println("This is " + numberOfDays + " days and " + numberOfHours + " hours and " + numberOfMinutes + " minutes and " + numberOfSeconds + " seconds");
-		
-		
+	
 		
 		
 		
